@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>My First HTML Page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Pokemon Go!</h1>
+    <p>Choose your starter!</p>
+    <table>
+      <tr>
+        <td>
+          <img height=200 src="http://bit.ly/1OSDgys" alt="Image not found">
+        </td>
+        <td valign="bottom">
+          <i>Count: <span id="pikachuCount">0</span></i><br><button onclick="increaseCountPikachu()">Vote</button>
+        </td>
+        <td>
+          <img height=200 src="http://bit.ly/2oZQnBU" alt="Image not found">
+        </td>
+        <td valign="bottom">
+          <i>Count: <span id="charmanderCount">0</span></i><br><button onclick="increaseCountCharmander()">Vote</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img height=200 src="http://bit.ly/1EHwuT9" alt="Image not found">
+        </td>
+        <td valign="bottom">
+          <i>Count: <span id="squirtleCount">0</span></i><br><button onclick="increaseCountSquirtle()"()>Vote</button>
+        </td>
+        <td>
+          <img height=200 src="http://bit.ly/2jxJwhd" alt="Image not found">
+        </td>
+        <td valign="bottom">
+          <i>Count: <span id="bulbasaurCount">0</span></i><br><button onclick="increaseCountBulbasaur()">Vote</button>
+        </td>
+      </tr>
+    </table>
+    <script>
+      var pikachu = 0
+      function increaseCountPikachu(){
+        pikachu += 1
+        $("#pikachuCount").html(pikachu);
+      }
+
+      var charmander = 0
+      function increaseCountCharmander(){
+        charmander += 1
+        $("#charmanderCount").html(charmander);
+      }
+
+      var squirtle = 0
+      function increaseCountSquirtle(){
+        squirtle += 1
+        $("#squirtleCount").html(squirtle);
+      }
+
+      var bulbasaur = 0
+      function increaseCountBulbasaur(){
+        bulbasaur += 1
+        $("#bulbasaurCount").html(bulbasaur);
+      }
+    </script>
+  </body>
+</html>
